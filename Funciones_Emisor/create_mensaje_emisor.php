@@ -1,7 +1,7 @@
 <?php
-    $conexion_emisor = include("conexion_emisor.php");
-    $conexion_receptor= include("conexion_receptor.php");
-    $conexion_servidor= include("conexion_servidor.php");
+    include('conexion_emisor.php');
+    include('conexion_receptor.php');
+    include('conexion_servidor.php');
 
     $Emisor = "5524430586";
     $Receptor = $_POST['txtNumeroContacto'];
@@ -20,14 +20,6 @@
         '$Tipo_Mensaje'
         );";
 
-    $sentenciaReceptor="INSERT INTO mensaje VALUES(        
-        DEFAULT,
-        '$Emisor',
-        '$Mensaje',
-        '$Fecha_Hora', 
-        '$Estado', 
-        '$Tipo_Mensaje'
-        );";
     
     $sentenciaServidor="INSERT INTO chat_servidor VALUES(        
         DEFAULT,
@@ -39,13 +31,29 @@
         );";
 
     $resultado_emisor = mysqli_query($conexion_emisor,$sentenciaEmisor);
-    $resultado_receptor = mysqli_query($conexion_receptor,$sentenciaReceptor);
+    
     $resultado_servidor = mysqli_query($conexion_servidor,$sentenciaServidor);
-    if($resultado_emisor && $resultado_receptor && $resultado_servidor){
-        header("Location: ../emisor.php");          
+
+    if($resultado_emisor && $resultado_servidor){
+
+        
+        $sentenciaReceptor="INSERT INTO mensaje VALUES(        
+            DEFAULT,
+            '$Emisor',
+            '$Mensaje',
+            '$Fecha_Hora', 
+            '$Estado', 
+            '$Tipo_Mensaje'
+            );";
+            $resultado_receptor = mysqli_query($conexion_receptor,$sentenciaReceptor);
+            if($resultado_receptor){
+        header("Location: ../emisor.php");
+            }          
     }
     else{
         echo "Error";
     }
+    mysqli_close($conexion_receptor);
+    mysqli_close($conexion_servidor);
     mysqli_close($conexion_emisor);
 ?>
