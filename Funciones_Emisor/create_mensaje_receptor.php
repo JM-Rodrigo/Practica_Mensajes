@@ -12,8 +12,8 @@
         '$Emisor',
         '$Fecha_Hora',
         '$Mensaje',
-        '$Tipo_Mensaje'
-        '$Estado', 
+        '$Tipo_Mensaje',
+        '$Estado'
         );";
     if(mysqli_query($conexion,$sentenciaMensaje)){      
         header("Location: ../emisor.php");          
