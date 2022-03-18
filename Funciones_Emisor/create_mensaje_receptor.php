@@ -6,19 +6,20 @@
     date_default_timezone_set('America/Mexico_City');
     $Fecha_Hora = date('m-d-Y h:i:s a', time());
     $Estado = "Pendiente"; 
-    $sentenciaMensaje="INSERT INTO chat_servidor VALUES(        
+    $Tipo_Mensaje = "E";
+    $sentenciaMensaje="INSERT INTO mensaje VALUES(        
         DEFAULT,
         '$Emisor',
-        '$Receptor',
         '$Mensaje',
         '$Fecha_Hora', 
-        '$Estado'
+        '$Estado', 
+        '$Tipo_Mensaje'
         );";
-    if(mysqli_query($conexion_receptor,$sentenciaMensaje)){      
+    if(mysqli_query($conexion,$sentenciaMensaje)){      
         header("Location: ../index.php");          
     }
     else{
         echo "Error";
     }
-    mysqli_close($conexion_receptor);
+    mysqli_close($conexion);
 ?>
