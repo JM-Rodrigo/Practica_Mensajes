@@ -10,13 +10,13 @@
     $sentenciaMensaje="INSERT INTO mensaje VALUES(        
         DEFAULT,
         '$Emisor',
+        '$Fecha_Hora',
         '$Mensaje',
-        '$Fecha_Hora', 
-        '$Estado', 
         '$Tipo_Mensaje'
+        '$Estado', 
         );";
     if(mysqli_query($conexion,$sentenciaMensaje)){      
-        header("Location: ../index.php");          
+        header("Location: ../emisor.php");          
     }
     else{
         echo "Error";
