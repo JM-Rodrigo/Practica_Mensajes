@@ -37,17 +37,15 @@
         '$Fecha_Hora', 
         '$Estado'
         );";
-    if(mysqli_query($conexion_emisor,$sentenciaEmisor)){ 
-        header("Location: ../emisor.php");
-    }
-    if(mysqli_query($conexion_receptor,$sentenciaReceptor)){  
-        header("Location: ../emisor.php");
-        
-    }if(mysqli_query($conexion_servidor,$sentenciaServidor)){
-        header("Location: ../emisor.php");
+
+    $resultado_emisor = mysqli_query($conexion_emisor,$sentenciaEmisor);
+    $resultado_receptor = mysqli_query($conexion_receptor,$sentenciaReceptor);
+    $resultado_servidor = mysqli_query($conexion_servidor,$sentenciaServidor);
+    if($resultado_emisor && $resultado_receptor && $resultado_servidor){
+        header("Location: ../emisor.php");          
     }
     else{
         echo "Error";
     }
-    mysqli_close($conexion);
+    mysqli_close($conexion_emisor);
 ?>
