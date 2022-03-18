@@ -1,6 +1,6 @@
 <?php
 
-	$servidor = "localhost";
+	$servidor = "192.168.137.1";
 	$usuario = "root";
 	$password = "14040002";
 	$db = "servidor_mensajeria";
