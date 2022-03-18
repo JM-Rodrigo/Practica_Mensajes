@@ -30,7 +30,7 @@
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
                     <option>--Seleccione--</option>
                         <?php
-                            include("Funciones/conexion_emisor.php");
+                            include("Funciones_Emisor/conexion_emisor.php");
                             $sentencia="SELECT * FROM contacto";
                             $resultado=mysqli_query($conexion,$sentencia);
                             while($contacto=mysqli_fetch_assoc($resultado)){
