@@ -1,8 +1,8 @@
 <?php
-	$servidor = "";
+	$servidor = "localhost";
 	$usuario = "root";
 	$password = "jonathan";
-	$db = "bd_emisor";
+	$db = "cliente";
 
 	$conexion = mysqli_connect(
 		$servidor,
