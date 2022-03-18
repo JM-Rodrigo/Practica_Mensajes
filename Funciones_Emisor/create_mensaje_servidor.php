@@ -1,5 +1,6 @@
 <?php
     include("conexion_servidor.php");
+    include("conexion_emisor.php");
     $Emisor = "5524430586";
     $Receptor = $_POST['txtNumeroContacto'];
     $Mensaje = $_POST['txtMensaje'];
@@ -14,8 +15,18 @@
         '$Fecha_Hora', 
         '$Estado'
         );";
-    if(mysqli_query($conexion_servidor,$sentenciaMensaje)){      
-        header("Location: ../index.php");          
+    if(mysqli_query($conexion_servidor,$sentenciaMensaje)){    
+        $sentenciae="INSERT INTO  VALUES(        
+            DEFAULT,
+            '$Emisor',
+            '$Receptor',
+            '$Mensaje',
+            '$Fecha_Hora', 
+            '$Estado'
+            );";
+        if(mysqli_query($conexion_emisor,$sentenciae)){  
+        header("Location: ../index.php");     
+        }     
     }
     else{
         echo "Error";

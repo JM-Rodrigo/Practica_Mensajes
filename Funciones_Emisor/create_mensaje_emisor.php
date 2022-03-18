@@ -1,5 +1,6 @@
 <?php
     include("conexion_emisor.php");
+    include("conexion_receptor.php");
     $Emisor = "5524430586";
     $Receptor = $_POST['txtNumeroContacto'];
     $Mensaje = $_POST['txtMensaje'];
@@ -7,16 +8,34 @@
     $Fecha_Hora = date('m-d-Y h:i:s a', time());
     $Tipo_Mensaje = "S";
     $Estado = "P"; 
-    $sentenciaMensaje="INSERT INTO mensaje VALUES(        
+    $sentenciaEmisor="INSERT INTO mensaje VALUES(        
         DEFAULT,
-        '$Receptor',
+        '$Emisor',
         '$Mensaje',
         '$Fecha_Hora', 
         '$Estado', 
         '$Tipo_Mensaje'
         );";
-    if(mysqli_query($conexion,$sentenciaMensaje)){      
-        header("Location: ../index.php");          
+    if(mysqli_query($conexion_emisor,$sentenciaEmisor)){ 
+        $sentenciaReceptor="INSERT INTO mensaje VALUES(        
+            DEFAULT,
+            '$Emisor',
+            '$Mensaje',
+            '$Fecha_Hora', 
+            '$Estado', 
+            '$Tipo_Mensaje'
+            );";
+    }
+    if(mysqli_query($conexion_servidor,$sentenciaServidor)){  
+        $sentenciaServidor="INSERT INTO chat_servidor VALUES(        
+            DEFAULT,
+            '$Emisor',
+            '$Receptor',
+            '$Mensaje',
+            '$Fecha_Hora', 
+            '$Estado'
+            );";
+        header("Location: ../emisor.php");
     }
     else{
         echo "Error";
