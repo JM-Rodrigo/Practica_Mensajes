@@ -26,7 +26,7 @@
         <script>
             function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
-                document.formEnviar.target = "_blank";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit()
             }
             function enviar2() {
