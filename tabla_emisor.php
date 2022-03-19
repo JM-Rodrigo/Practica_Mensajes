@@ -53,6 +53,7 @@
                 $Mensaje = $verChat["Mensaje"];
                 date_default_timezone_set('America/Mexico_City');
                 $Fecha_Hora = $verChat["Fecha_Hora"];
+                echo $verChat["Fecha_Hora"];
                 $Estado = "Pendiente"; 
                 $Tipo_Mensaje = "E";
                 $sentenciaMensaje="INSERT INTO mensaje VALUES(        
