@@ -35,10 +35,17 @@
                 document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit();
             }
+            function enviar3() {
+
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
+                document.formEnviar.target = "_blank";
+                document.forms.formEnviar.submit();
+            }
             
             function create(){
                 enviar1();
                 enviar2();
+                enviar3();
                 
             }
         </script>
