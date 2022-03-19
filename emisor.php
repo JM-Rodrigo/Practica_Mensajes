@@ -38,7 +38,7 @@
             }
         </script>
         -->
-        <form method="POST" action="../Practica_Mensajes/Funciones_Emisor/create_mensaje_emisor.php && ../../create_mensaje_receptor.php" >
+        <form method="POST" action="./Funciones_Emisor/create_mensaje_servidor.php && ../../create_mensaje_receptor.php" >
             
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
