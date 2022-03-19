@@ -38,7 +38,8 @@
             }
         </script>
         -->
-        <form method="post" action="./Funciones_Emisor/create_mensaje_servidor.php && ../../create_mensaje_receptor.php" >
+        <form method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
+            <form method="post" action="./Funciones_Emisor/create_mensaje_receptor.php" >
             
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
@@ -66,6 +67,7 @@
                 <label >Mensajes recibidos: </label>
                 <div id="tablaUpdate"></div>
             </div>
+            </form>
         </form>
     </div>
     <script src="JS/funciones.js"></script>
