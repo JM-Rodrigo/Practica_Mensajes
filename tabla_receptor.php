@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                 <?php
-                    include("./Funciones_Emisor/conexion_servidor.php"); //importar la conexion
+                    include("./Funciones_Receptor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
                         Emisor,
                         Fecha_Hora,
