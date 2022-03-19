@@ -24,9 +24,9 @@
                         Tipo_Mensaje 
                         FROM
                         Mensaje
-                        WHERE Receptor = '5524430586'";
+                        WHERE Numero = '5524430586'";
                     
-                        $resultado = mysqli_query($conexion_servidor, $sentencia);
+                        $resultado = mysqli_query($conexion, $sentencia);
                     
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
@@ -45,7 +45,7 @@
                                 <td>".$verChat["Tipo_Mensaje"]."</td>
                             </tr>";
                         } 
-                        mysqli_close($conexion_servidor);                                       
+                        mysqli_close($conexion);                                       
                 ?>      
                 </tbody>        
             </table>
