@@ -22,6 +22,7 @@
     
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
+        <!--
         <script>
             function enviar() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
@@ -36,7 +37,8 @@
 
             }
         </script>
-        <form method="POST" id="formEnviar">
+        -->
+        <form method="POST" action="./Funciones_Emisor/create_mensaje_emisor.php && ../../create_mensaje_receptor.php" >
             
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
@@ -58,7 +60,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje"  onclick = "this.form.submit = enviar();"/>
+                <input type="submit" value="Enviar Mensaje"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
