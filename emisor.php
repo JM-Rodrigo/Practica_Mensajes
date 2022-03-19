@@ -24,23 +24,26 @@
         <div class="fish" id="fish2"></div>
         
         <script>
-            function enviar_emisor() {
+            function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
+                document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
             }
-            function enviar_receptor() {
+            function enviar2() {
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }
-            function enviar_servidor() {
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
+            function enviar3() {
+                document.forms.formEnviar.action = "./Funciones_Servidor/create_mensaje_servidor.php";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
-            }
+            }   
             function create(){
-                enviar_emisor();
-                enviar_receptor();
-                enviar_servidor();
+                enviar1();
+                enviar2();
+                enviar3();
             }
         </script>
         
