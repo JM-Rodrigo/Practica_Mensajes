@@ -22,7 +22,9 @@
                         Fecha_Hora,
                         Mensaje
                         FROM
-                        chat_servidor";
+                        chat_servidor
+                        WHERE Emisor = '5524430586'"
+                        ;
                     
                         $resultado = mysqli_query($conexion, $sentencia);
                     
