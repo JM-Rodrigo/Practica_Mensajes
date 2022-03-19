@@ -58,7 +58,7 @@
         $(document).ready(function(){
             setInterval(
                 function(){
-                    $('#tablaUpdate').load('tabla_cliente.php');
+                    $('#tablaUpdate').load('tabla_receptor.php');
                 },2000
             );
         });
