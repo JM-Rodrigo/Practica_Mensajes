@@ -30,7 +30,7 @@
                     <option>--Seleccione--</option>
                         <?php
                             include("Funciones_Receptor/conexion_receptor.php");
-                            $sentencia="SELECT * FROM contacto_emisor";
+                            $sentencia="SELECT * FROM contacto";
                             $resultado=mysqli_query($conexion,$sentencia);
                             while($contacto=mysqli_fetch_assoc($resultado)){
                                 echo "
