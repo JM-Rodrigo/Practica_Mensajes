@@ -24,7 +24,7 @@
         <div class="fish" id="fish2"></div>
         
         <script>
-            function enviar_recptor(){
+            function enviar_receptor(){
                 document.forms.formEnviar.action = "./Funciones_Receptor/create_mensaje_receptor.php";
                 document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit()
