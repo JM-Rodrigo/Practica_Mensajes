@@ -35,8 +35,7 @@
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
                 document.formEnviar.target = "_blank";
-                document.forms.formEnviar.submit();
-                 
+                document.forms.formEnviar.submit();  
             }
 
         </script>
