@@ -10,9 +10,6 @@
                         <th scope="col"></th>
                         <th scope="col"></th>
                         <th scope="col">Fecha/Hora</th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col">Tipo</th>
                 </thead>
                 <tbody>
                 <?php

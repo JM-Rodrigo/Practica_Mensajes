@@ -16,7 +16,7 @@
                 </thead>
                 <tbody>
                 <?php
-                    include("./Funciones/conexion.php"); //importar la conexion
+                    include("./Funciones_Servidor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
                         chat_servidor.Emisor,
                         chat_servidor.Receptor, 
