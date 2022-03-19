@@ -24,13 +24,12 @@
         <div class="fish" id="fish2"></div>
         
         <form action="./Funciones/create_mensaje.php" method="POST">
-            
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
                     <option>--Seleccione--</option>
                         <?php
-                            include("Funciones/conexion_emisor.php");
+                            include("Funciones_Receptor/conexion_receptor.php");
                             $sentencia="SELECT * FROM contacto_emisor";
                             $resultado=mysqli_query($conexion,$sentencia);
                             while($contacto=mysqli_fetch_assoc($resultado)){
