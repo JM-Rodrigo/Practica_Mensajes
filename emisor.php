@@ -53,7 +53,7 @@
 
         </script>
         
-        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
+        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_receptor.php" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
