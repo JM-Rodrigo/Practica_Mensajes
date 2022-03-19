@@ -20,7 +20,7 @@
                     $sentencia = "SELECT
                         Emisor,
                         Fecha_Hora,
-                        Texto
+                        Mensaje
                         FROM
                         servidor_mensajeria";
                     
@@ -32,7 +32,7 @@
                                 <td>".$verChat["Emisor"]."</td>
                                 <td></td>
                                 <td></td>
-                                <td>".$verChat["Texto"]."</td>
+                                <td>".$verChat["Mensaje"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
