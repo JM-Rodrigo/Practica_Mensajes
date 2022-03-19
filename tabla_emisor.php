@@ -24,7 +24,7 @@
                         Tipo_Mensaje 
                         FROM
                         Mensaje
-                        WHERE Numero = '5524430586'";
+                        WHERE Numero = '5568879355'";
                     
                         $resultado = mysqli_query($conexion, $sentencia);
                     
