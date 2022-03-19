@@ -22,7 +22,7 @@
                         Fecha_Hora,
                         Mensaje
                         FROM
-                        servidor_mensajeria";
+                        chat_servidor";
                     
                         $resultado = mysqli_query($conexion, $sentencia);
                     
