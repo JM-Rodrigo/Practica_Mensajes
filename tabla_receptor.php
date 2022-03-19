@@ -18,7 +18,7 @@
                 <?php
                     include("./Funciones_Receptor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
-                        Receptor,
+                        Emisor,
                         Fecha_Hora,
                         Mensaje
                         FROM
@@ -29,7 +29,7 @@
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
                             <tr>
-                                <td>".$verChat["Receptor"]."</td>
+                                <td>".$verChat["Emisor"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td>".$verChat["Mensaje"]."</td>
