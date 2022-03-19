@@ -29,13 +29,22 @@
                 document.formEnviar.target = "_top";
                 document.forms.formEnviar.submit()
             }
+
             
             function enviar_servidor(){
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
-                document.formEnviar.target = "framename";
+                document.formEnviar.target = "_top";
                 document.forms.formEnviar.submit();
             }
+
+            function enviar_receptor(){
+
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_top";
+                document.forms.formEnviar.submit();
+            }
+
         </script>
         
         <form id="formEnviar" name="formEnviar" method="post" >
