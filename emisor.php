@@ -35,18 +35,22 @@
                 document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit();
             }
-            function enviar3() {
-
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
-                document.formEnviar.target = "_self";
-                document.forms.formEnviar.submit();
-            }
             
             function create(){
                 enviar1();
                 enviar2();
                 
             }
+        </script>
+           
+        <script>
+             function enviar3() {
+
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
+                document.formEnviar.target = "_blank";
+                document.forms.formEnviar.submit();
+                }
+
         </script>
         
         <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
