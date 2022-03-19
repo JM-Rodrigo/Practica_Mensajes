@@ -18,7 +18,7 @@
                 <?php
                     include("./Funciones_Receptor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
-                        Emisor,
+                        Receptor,
                         Fecha_Hora,
                         Mensaje
                         FROM
