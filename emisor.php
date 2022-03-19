@@ -26,20 +26,22 @@
         <script>
             function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
+                document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
             }
             function enviar2() {
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }
             function create(){
                 enviar1();
-                enviar2();
+                enviar2()
             }
         </script>
         
-        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_receptor.php" >
+        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
