@@ -19,12 +19,10 @@
                     include("./Funciones_Emisor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
                         Receptor,
-                        Emisor,
                         Fecha_Hora,
                         Mensaje
                         FROM
-                        chat_servidor
-                        WHERE Receptor = '5568879355'"
+                        chat_servidor"
                         ;
                     
                         $resultado = mysqli_query($conexion, $sentencia);
