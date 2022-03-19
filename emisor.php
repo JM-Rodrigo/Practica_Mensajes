@@ -23,7 +23,7 @@
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
         
-        <form action="./Funciones_Emisor/create_mensaje_emisor.php && ./Funciones_Emisor/create_mensaje_receptor.php && ./Funciones_Emisor/create_mensaje_servidor.php" method="POST">
+        <form action="./Funciones_Emisor/create_mensaje_emisor.php && ./Funciones_Emisor/create_mensaje_receptor.php" method="POST">
             
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
