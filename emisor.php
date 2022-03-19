@@ -35,19 +35,13 @@
                 document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }
-            function enviar3() {
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
-                document.formEnviar.target = "_self";
-                document.forms.formEnviar.submit();
-            }   
             function create(){
                 enviar1();
                 enviar2();
-                enviar3();
             }
         </script>
         
-        <form id="formEnviar" name="formEnviar" method="post" >
+        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_servidor.php" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
