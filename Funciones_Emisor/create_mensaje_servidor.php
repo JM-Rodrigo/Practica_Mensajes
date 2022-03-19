@@ -14,12 +14,12 @@
         '$Fecha_Hora', 
         '$Estado'
         );";
-    if(mysqli_query($conexion_servidor,$sentenciaMensaje)){   
+    if(mysqli_query($conexion,$sentenciaMensaje)){   
         header("Location: ../emisor.php");           
        
     }
     else{
         echo "Error";
     }
-    mysqli_close($conexion_servidor);
+    mysqli_close($conexion);
 ?>
