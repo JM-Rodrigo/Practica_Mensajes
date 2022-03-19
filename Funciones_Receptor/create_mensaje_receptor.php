@@ -16,7 +16,7 @@
         '$Estado'
         );";
     if(mysqli_query($conexion,$sentenciaMensaje)){      
-        header("Location: ../emisor.php");          
+        header("Location: ../receptor.php");          
     }
     else{
         echo "Error";
