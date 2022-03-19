@@ -16,33 +16,28 @@
                 </thead>
                 <tbody>
                 <?php
-                    include("./Funciones_Emisor/conexion_emisor.php"); //importar la conexion
+                    include("./Funciones_Emisor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
-                        Numero,
+                        Emisor,
                         Fecha_Hora,
-                        Texto,
-                        Tipo_Mensaje 
-                        FROM
                         Mensaje
-                        WHERE Numero = '5568879355'";
+                        FROM
+                        chat_servidor";
                     
                         $resultado = mysqli_query($conexion, $sentencia);
                     
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
                             <tr>
-                                <td>".$verChat["Numero"]."</td>
+                                <td>".$verChat["Emisor"]."</td>
                                 <td></td>
                                 <td></td>
-                                <td>".$verChat["Texto"]."</td>
+                                <td>".$verChat["Mensaje"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
                                 <td>".$verChat["Fecha_Hora"]."</td>
-                                <td></td>
-                                <td></td>
-                                <td>".$verChat["Tipo_Mensaje"]."</td>
                             </tr>";
                         } 
                         mysqli_close($conexion);                                       
