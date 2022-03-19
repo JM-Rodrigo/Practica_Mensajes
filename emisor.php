@@ -26,7 +26,7 @@
         <script>
             function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
-                document.formEnviar.target = "_blank";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit()
             }
             function enviar2() {
@@ -47,7 +47,7 @@
             }
         </script>
         
-        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
+        <form id="formEnviar" name="formEnviar" method="post" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
