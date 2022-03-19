@@ -36,7 +36,7 @@
                 document.forms.formEnviar.submit();
             }
             function enviar3() {
-                document.forms.formEnviar.action = "./Funciones_Servidor/create_mensaje_servidor.php";
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
                 document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }   
