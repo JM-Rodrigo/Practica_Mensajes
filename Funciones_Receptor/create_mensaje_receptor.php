@@ -1,6 +1,6 @@
 <?php
     include('conexion_receptor.php');
-    $Emisor = "5568878355";
+    $Emisor = "5568879355";
     $Receptor = $_POST['txtNumeroContacto'];
     $Mensaje = $_POST['txtMensaje'];
     date_default_timezone_set('America/Mexico_City');
@@ -23,3 +23,4 @@
     }
     mysqli_close($conexion);
 ?>
+
