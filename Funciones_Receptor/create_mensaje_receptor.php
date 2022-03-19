@@ -1,24 +1,25 @@
 <?php
-    include("conexion_receptor.php");
-    $Emisor = "5524430586";
+    include('conexion_emisor.php');
+    $Emisor = "5568879355";
     $Receptor = $_POST['txtNumeroContacto'];
     $Mensaje = $_POST['txtMensaje'];
     date_default_timezone_set('America/Mexico_City');
     $Fecha_Hora = date('m-d-Y h:i:s a', time());
     $Estado = "Pendiente"; 
-    $sentenciaMensaje="INSERT INTO chat_servidor VALUES(        
+    $Tipo_Mensaje = "S";
+    $sentenciaMensaje="INSERT INTO mensaje VALUES(        
         DEFAULT,
         '$Emisor',
-        '$Receptor',
+        '$Fecha_Hora',
         '$Mensaje',
-        '$Fecha_Hora', 
+        '$Tipo_Mensaje',
         '$Estado'
         );";
-    if(mysqli_query($conexion_receptor,$sentenciaMensaje)){      
-        header("Location: ../index.php");          
+    if(mysqli_query($conexion,$sentenciaMensaje)){      
+        header("Location: ../emisor.php");          
     }
     else{
         echo "Error";
     }
-    mysqli_close($conexion_receptor);
+    mysqli_close($conexion);
 ?>

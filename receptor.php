@@ -23,7 +23,24 @@
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
         
-        <form action="./Funciones/create_mensaje.php" method="POST">
+        <script>
+            function enviar_recptor(){
+                document.forms.formEnviar.action = "./Funciones_Receptor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_self";
+                document.forms.formEnviar.submit()
+                
+            }
+
+            function enviar_servidor(){
+
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
+                document.formEnviar.target = "_blank";
+                document.forms.formEnviar.submit();  
+            }
+
+        </script>
+        
+        <form id="formEnviar" name="formEnviar" method="post" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
@@ -44,7 +61,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" />
+                <input type="submit" value="Enviar Mensaje" onclick="enviar_receptor(); enviar_servidor();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
