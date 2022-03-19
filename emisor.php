@@ -29,16 +29,9 @@
                 document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
             }
-            function enviar2() {
-
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
-                document.formEnviar.target = "_blank";
-                document.forms.formEnviar.submit();
-            }
             
             function create(){
                 enviar1();
-                enviar2();
                 
             }
         </script>
