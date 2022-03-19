@@ -25,10 +25,15 @@
         <script>
             function enviar() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
+                document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit();
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
+
+                return true;
+
             }
         </script>
         <form method="POST" id="formEnviar">
