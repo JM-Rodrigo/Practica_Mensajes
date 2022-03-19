@@ -10,20 +10,21 @@
                         <th scope="col"></th>
                         <th scope="col"></th>
                         <th scope="col">Fecha/Hora</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">Tipo</th>
                 </thead>
                 <tbody>
                 <?php
-                    include("./Funciones/conexion_servidor.php"); //importar la conexion
+                    include("./Funciones_Emisor/conexion_servidor.php"); //importar la conexion
                     $sentencia = "SELECT
-                        chat_servidor.Emisor,
-                        chat_servidor.Receptor, 
-                        chat_servidor.Mensaje, 
-                        chat_servidor.Fecha_Hora
+                        Emisor,
+                        Fecha_Hora,
+                        Texto
                         FROM
-                        chat_servidor
-                        WHERE Receptor = '5524430586'";
+                        servidor_mensajeria";
                     
-                        $resultado = mysqli_query($conexion_servidor, $sentencia);
+                        $resultado = mysqli_query($conexion, $sentencia);
                     
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
@@ -31,7 +32,7 @@
                                 <td>".$verChat["Emisor"]."</td>
                                 <td></td>
                                 <td></td>
-                                <td>".$verChat["Mensaje"]."</td>
+                                <td>".$verChat["Texto"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -39,7 +40,7 @@
                                 <td>".$verChat["Fecha_Hora"]."</td>
                             </tr>";
                         } 
-                        mysqli_close($conexion_servidor);                                       
+                        mysqli_close($conexion);                                       
                 ?>      
                 </tbody>        
             </table>
