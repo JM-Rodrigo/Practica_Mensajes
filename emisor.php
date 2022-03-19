@@ -26,13 +26,11 @@
         <script>
             function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
-                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit()
             }
             function enviar2() {
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
-                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }
             function create(){
