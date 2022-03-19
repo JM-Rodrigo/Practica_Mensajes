@@ -26,14 +26,14 @@
         <script>
             function enviar_emisor(){
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
-                document.formEnviar.target = "_self";
+                document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
             }
             
             function enviar_servidor(){
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
-                document.formEnviar.target = "_blank";
+                document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
             }
         </script>
