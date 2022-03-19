@@ -1,6 +1,5 @@
 <?php
     include("conexion_servidor.php");
-    include("conexion_emisor.php");
     $Emisor = "5524430586";
     $Receptor = $_POST['txtNumeroContacto'];
     $Mensaje = $_POST['txtMensaje'];
