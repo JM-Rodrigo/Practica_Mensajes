@@ -13,7 +13,7 @@
                 </thead>
                 <tbody>
                 <?php
-                    include("./Funciones_Emisor/conexion_servidor.php"); //importar la conexion
+                    include("./Funciones_Emisor/conexion_emisor.php"); //importar la conexion
                     $sentencia = "SELECT
                         chat_servidor.Emisor,
                         chat_servidor.Receptor, 

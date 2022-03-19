@@ -15,18 +15,9 @@
         '$Fecha_Hora', 
         '$Estado'
         );";
-    if(mysqli_query($conexion_servidor,$sentenciaMensaje)){    
-        $sentenciae="INSERT INTO  VALUES(        
-            DEFAULT,
-            '$Emisor',
-            '$Receptor',
-            '$Mensaje',
-            '$Fecha_Hora', 
-            '$Estado'
-            );";
-        if(mysqli_query($conexion_emisor,$sentenciae)){  
-        header("Location: ../index.php");     
-        }     
+    if(mysqli_query($conexion_servidor,$sentenciaMensaje)){   
+        header("Location: ../emisor.php");           
+       
     }
     else{
         echo "Error";
