@@ -27,7 +27,7 @@
             function enviar_receptor(){
                 document.forms.formEnviar.action = "./Funciones_Receptor/create_mensaje_receptor.php";
                 document.formEnviar.target = "_self";
-                document.forms.formEnviar.submit()
+                document.forms.formEnviar.submit();
                 
             }
 
