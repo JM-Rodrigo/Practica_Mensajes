@@ -28,7 +28,7 @@
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
                 document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
-                ventana_secundaria.close()
+                
             }
 
             
@@ -37,6 +37,7 @@
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
                 document.formEnviar.target = "_top";
                 document.forms.formEnviar.submit();
+                ventana_secundaria.close()
             }
 
         </script>
