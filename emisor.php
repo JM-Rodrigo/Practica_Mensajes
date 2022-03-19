@@ -38,13 +38,6 @@
                 document.forms.formEnviar.submit();
             }
 
-            function enviar_receptor(){
-
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
-                document.formEnviar.target = "_top";
-                document.forms.formEnviar.submit();
-            }
-
         </script>
         
         <form id="formEnviar" name="formEnviar" method="post" >
@@ -68,7 +61,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor(); enviar_receptor();"/>
+                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
