@@ -29,7 +29,7 @@
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
                             <tr>
-                                <td>".$verChat["Emisor"]."</td>
+                                <td>".$verChat["Receptor"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td>".$verChat["Mensaje"]."</td>
