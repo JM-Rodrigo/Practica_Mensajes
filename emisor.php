@@ -30,12 +30,6 @@
                 document.forms.formEnviar.submit()
             }
             
-            function enviar_receptor(){
-
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
-                document.formEnviar.target = "_blank";
-                document.forms.formEnviar.submit();
-            }
             function enviar_servidor(){
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
@@ -65,7 +59,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_receptor(); enviar_servidor();"/>
+                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
