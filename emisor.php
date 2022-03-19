@@ -24,26 +24,24 @@
         <div class="fish" id="fish2"></div>
         
         <script>
-            function enviar1() {
+            function enviar_emisor(){
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
                 document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit()
             }
             
-            function create(){
-                enviar1();
-                
+            function enviar_receptor(){
+
+                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
+                document.formEnviar.target = "_self";
+                document.forms.formEnviar.submit();
             }
-        </script>
-           
-        <script>
-             function enviar3() {
+            function enviar_servidor(){
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
                 document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
-                }
-
+            }
         </script>
         
         <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_receptor.php" >
@@ -67,7 +65,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="create(); enviar3();"/>
+                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_receptor(); enviar_servidor();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
