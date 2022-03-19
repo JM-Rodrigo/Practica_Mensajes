@@ -22,25 +22,26 @@
     
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
-        <!--
+        
         <script>
-            function enviar() {
+            function enviar1() {
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
                 document.formEnviar.target = "_blank";
-                document.forms.formEnviar.submit();
+                document.forms.formEnviar.submit()
+            }
+            function enviar2() {
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
                 document.formEnviar.target = "_self";
                 document.forms.formEnviar.submit();
-
-                return true;
-
+            }
+            function create(){
+                enviar1();
+                enviar2()
             }
         </script>
-        -->
-        <form method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
-            <form method="post" action="./Funciones_Emisor/create_mensaje_receptor.php" >
-            
+        
+        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
@@ -61,13 +62,12 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje"/>
+                <input type="submit" value="Enviar Mensaje" onclick="create();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
                 <div id="tablaUpdate"></div>
             </div>
-            </form>
         </form>
     </div>
     <script src="JS/funciones.js"></script>
