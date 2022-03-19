@@ -33,7 +33,7 @@
             function enviar_receptor(){
 
                 document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_receptor.php";
-                document.formEnviar.target = "_self";
+                document.formEnviar.target = "_blank";
                 document.forms.formEnviar.submit();
             }
             function enviar_servidor(){
