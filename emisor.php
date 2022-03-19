@@ -45,12 +45,11 @@
             function create(){
                 enviar1();
                 enviar2();
-                enviar3();
                 
             }
         </script>
         
-        <form id="formEnviar" name="formEnviar" method="post" action="./Funciones_Emisor/create_mensaje_emisor.php" >
+        <form id="formEnviar" name="formEnviar" method="post">
             <div class="formgroup" id="name-form">
                 <label for="name">Número de contacto:</label>
                 <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
@@ -71,7 +70,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="create();"/>
+                <input type="submit" value="Enviar Mensaje" onclick="create(); enviar3();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
