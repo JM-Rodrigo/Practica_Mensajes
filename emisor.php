@@ -68,7 +68,7 @@
                 <textarea id="mensaje" name="txtMensaje"></textarea>
             </div>
             <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor();"/>
+                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor(); enviar_receptor();"/>
             </div>
             <div class="formgroup" id="message-form">
                 <label >Mensajes recibidos: </label>
