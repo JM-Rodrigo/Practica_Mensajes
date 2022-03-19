@@ -23,15 +23,14 @@
                         Fecha_Hora,
                         Mensaje
                         FROM
-                        chat_servidor
-                        WHERE Receptor = '5524430586'" ;
+                        chat_servidor";
                     
                         $resultado = mysqli_query($conexion, $sentencia);
                     
                         while($verChat = mysqli_fetch_assoc($resultado)){
                             echo"
                             <tr>
-                                <td>".$verChat["Emisor"]."</td>
+                                <td>".$verChat["Receptor"]."</td>
                                 <td></td>
                                 <td></td>
                                 <td>".$verChat["Mensaje"]."</td>
