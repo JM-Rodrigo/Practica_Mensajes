@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <h1>Mensajes</h1>
+        <h1>Mensajes Salida</h1>
     </header>
     
     <div id="form">
