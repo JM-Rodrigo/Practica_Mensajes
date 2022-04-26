@@ -11,11 +11,15 @@
         crossorigin="anonymous">
     </script>  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Chat ISIC</title>
+    <title>Practica IV</title>
 </head>
 <body>
     <header>
-        <h1>Mensajes</h1>
+<<<<<<< HEAD
+        <h1>Mensajes alv</h1>
+=======
+        <h1>Mensajes </h1>
+>>>>>>> a1a17c238ad3e68381dab8943330a935d3562931
     </header>
     
     <div id="form">

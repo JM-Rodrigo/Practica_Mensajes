@@ -10,11 +10,11 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous">
     </script>  
-    <title>Chat ISIC</title>
+    <title>Chat</title>
 </head>
 <body>
     <header>
-        <h1>Servidor</h1>
+        <h1>Servidor chido</h1>
     </header>
 
 
