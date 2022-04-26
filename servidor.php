@@ -10,7 +10,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous">
     </script>  
-    <title>Chat ISIC</title>
+    <title>Chat</title>
 </head>
 <body>
     <header>
