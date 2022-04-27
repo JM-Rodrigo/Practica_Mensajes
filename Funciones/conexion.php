@@ -1,7 +1,7 @@
 <?php
-	$servidor = "localhost";
+	$servidor = "169.254.166.141";
 	$usuario = "root";
-	$password = "14040002";
+	$password = "osito123";
 	$db = "replicacion";
 
 	$conexion = mysqli_connect(
