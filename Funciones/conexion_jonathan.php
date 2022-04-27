@@ -1,8 +1,8 @@
 <?php
 	error_reporting(0);
-	$servidor = "169.254.166.141";
+	$servidor = "169.254.194.10";
 	$usuario = "root";
-	$password = "osito123";
+	$password = "jonathan070918";
 	$db = "replicacion";
 
 	$conexion = mysqli_connect($servidor, $usuario,$password, $db);
@@ -15,7 +15,7 @@
 	
 	} else {
 		/*printf ("Error: %s\n", mysqli_error($conexion));*/
-		include("./Funciones/conexion_jorge.php"); 
+		include("./Funciones/conexion_rodrigo.php");
 	}
 
 	
