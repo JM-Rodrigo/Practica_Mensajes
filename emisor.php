@@ -15,59 +15,17 @@
 </head>
 <body>
     <header>
-        <h1>Prueba</h1>
+        <h1>Conexion</h1>
     </header>
     
     <div id="form">
     
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
-        
-        <script>
-            function enviar_emisor(){
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_emisor.php";
-                document.formEnviar.target = "_self";
-                document.forms.formEnviar.submit();
-                
-            }
-
-            function enviar_servidor(){
-
-                document.forms.formEnviar.action = "./Funciones_Emisor/create_mensaje_servidor.php";
-                document.formEnviar.target = "_blank";
-                document.forms.formEnviar.submit();  
-            }
-
-        </script>
-        
-        <form id="formEnviar" name="formEnviar" method="post" >
-            <div class="formgroup" id="name-form">
-                <label for="name">Número de contacto:</label>
-                <select  class="form-select" aria-label="Default select example" name="txtNumeroContacto">
-                    <option>--Seleccione--</option>
-                        <?php
-                            include("Funciones_Emisor/conexion_emisor.php");
-                            $sentencia="SELECT * FROM contacto";
-                            $resultado=mysqli_query($conexion,$sentencia);
-                            while($contacto=mysqli_fetch_assoc($resultado)){
-                                echo "
-                                <option value='".$contacto['Numero_Contacto']."'>".$contacto["Nombre_Contacto"]."</option>";
-                            }
-                        ?>
-                </select>
-            </div>
             <div class="formgroup" id="message-form">
-                <label for="message">Escribe tu mensaje: </label>
-                <textarea id="mensaje" name="txtMensaje"></textarea>
-            </div>
-            <div class="formgroup" id="message-form">
-                <input type="submit" value="Enviar Mensaje" onclick="enviar_emisor(); enviar_servidor();"/>
-            </div>
-            <div class="formgroup" id="message-form">
-                <label >Mensajes recibidos: </label>
+                <label > </label>
                 <div id="tablaUpdate"></div>
             </div>
-        </form>
     </div>
     <script src="JS/funciones.js"></script>
     <script type="text/javascript">
