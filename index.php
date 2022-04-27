@@ -23,9 +23,10 @@
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
             <div class="formgroup" id="message-form">
-                <label > </label>
+                <label>Datos</label>
                 <div id="tablaUpdate"></div>
             </div>
+            
     </div>
     <script src="JS/funciones.js"></script>
     <script type="text/javascript">

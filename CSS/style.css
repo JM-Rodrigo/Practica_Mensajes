@@ -19,6 +19,12 @@ h1{
 
 }
 
+.form, .tablaUpdate {
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+  }
+
 /* Animation webkit */
 @-webkit-keyframes myfirst
 {
