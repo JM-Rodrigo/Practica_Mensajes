@@ -15,11 +15,7 @@
 </head>
 <body>
     <header>
-<<<<<<< HEAD
         <h1>Mensajes alv</h1>
-=======
-        <h1>Mensajes </h1>
->>>>>>> a1a17c238ad3e68381dab8943330a935d3562931
     </header>
     
     <div id="form">
