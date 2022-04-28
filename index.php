@@ -17,16 +17,22 @@
     <header>
         <h1>Conexion</h1>
     </header>
-    
-    <div id="form">
+
+    <div id="form" class="form">
     
         <div class="fish" id="fish"></div>
         <div class="fish" id="fish2"></div>
+    
+        
+        <form id="formEnviar" name="formEnviar" >
+            <div class="formgroup" id="name-form">
+               
+            </div>
             <div class="formgroup" id="message-form">
-                <label>Datos</label>
+                <label >Datos: </label>
                 <div id="tablaUpdate"></div>
             </div>
-            
+        </form>
     </div>
     <script src="JS/funciones.js"></script>
     <script type="text/javascript">

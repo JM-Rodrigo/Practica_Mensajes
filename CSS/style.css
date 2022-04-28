@@ -2,7 +2,7 @@
 
 
 body, html{
-	height: 100%;
+	height: auto;
 	padding: 0;
 	margin: 0;
 	font-family: 'Sniglet', cursive;
@@ -66,12 +66,13 @@ header{
 }
 
 #form{
-	height: 100%;	
+	height: auto;	
 	background-color: #98d4f3;
 	overflow: hidden;
 	position: relative;
 	
 }
+
 form{
 	margin: 0 auto;
 	width: 500px;
