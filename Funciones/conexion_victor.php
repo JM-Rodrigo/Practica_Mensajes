@@ -1,6 +1,6 @@
 <?php
 	error_reporting(0);
-	$servidor = "localhost";
+	$servidor = "169.254.102.89";
 	$usuario = "root";
 	$password = "12345";
 	$db = "replicacion";
