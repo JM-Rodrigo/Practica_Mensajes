@@ -1,6 +1,6 @@
 <?php
 	error_reporting(0);
-	$servidor = "169.254.102.89";
+	$servidor = "localhost";
 	$usuario = "root";
 	$password = "12345";
 	$db = "replicacion";
@@ -15,7 +15,7 @@
 	
 	} else {
 		/*printf ("Error: %s\n", mysqli_error($conexion));*/
-		include("./Funciones/conexion_juan.php");
+		/*include("./Funciones/conexion_juan.php");*/
 	}
 
 	

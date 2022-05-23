@@ -18,7 +18,7 @@
                     </thead>
                     <tbody>
                     <?php
-                        include("./Funciones/conexion.php"); //importar la conexion
+                        include("./Funciones/conexion_jonathan.php"); //importar la conexion
                         $sentencia = "SELECT
                         cliente.Nombre_Cliente, 
                         cliente.Apellido1_Cliente, 

@@ -15,7 +15,7 @@
 	
 	} else {
 		/*printf ("Error: %s\n", mysqli_error($conexion));*/
-		include("./Funciones/conexion_jonathan.php");
+		include("./Funciones/conexion_jorge.php");
 	}
 
 	
